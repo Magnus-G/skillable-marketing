@@ -38,7 +38,7 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
 $sans-serif: 'PT Sans', sans-serif;
-$serif: 'PT Serif', serif;
+$serif: 'Varela Round', sans-serif;
 
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
@@ -50,6 +50,8 @@ $base-line-height: $base-font-size * 1.5;
 $base-border-radius: em(3);
 
 $space: $base-font-size *2;
+
+$radius: 3px;
 
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
@@ -63,7 +65,7 @@ $light-yellow: master-color(#FFF6BF);
 $light-green: master-color(#E6EFC2);
 
 //  Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: master-color(#555);
 $base-accent-color: $blue;
 
 //  Text Link Colors
@@ -80,4 +82,14 @@ $success-color: $light-green;
 
 //
 $body-color: master-color(white);
-$hero-background: master-color(#F0DA6A);
+
+$nav-color: master-color(white);
+
+$hero-background: master-color(whitesmoke);
+
+$button-color: master-color(gray);
+
+$footer-color: master-color(whitesmoke);
+
+$cta-color: master-color(#00B465);
+$contrast-color: master-color(#547483);
