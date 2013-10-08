@@ -1,0 +1,118 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "a1d4b614f12cfe2b5aa66313ad88c90c",
+      "css": "users-outline",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "x8m4z7b33cv1h2s784tjlam56uq40wtd",
+      "css": "users",
+      "code": 59394,
+      "src": "typicons"
+    },
+    {
+      "uid": "40c9502d45c736a0a6ec45e6fbc28656",
+      "css": "ok-outline",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "43fl9m553j1z5937vfjz0lgolrlspxwl",
+      "css": "ok",
+      "code": 59405,
+      "src": "typicons"
+    },
+    {
+      "uid": "tau7t0t38662eqxrb80ozeiase5em2x9",
+      "css": "thumbs-up",
+      "code": 59396,
+      "src": "typicons"
+    },
+    {
+      "uid": "ani12ucvy2plqmykysnk4zd9i24cmxqp",
+      "css": "thumbs-down",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "b90868gfogj970a1g0dnot6hm5r4uj55",
+      "css": "comment",
+      "code": 59409,
+      "src": "typicons"
+    },
+    {
+      "uid": "ccf71c505b173c61a2e4e8c8cb907dfa",
+      "css": "chat-alt",
+      "code": 59408,
+      "src": "typicons"
+    },
+    {
+      "uid": "gruasbs60jlu9us53csv9q7nnwy4d990",
+      "css": "address",
+      "code": 59406,
+      "src": "typicons"
+    },
+    {
+      "uid": "547c96163e3724fa7384f6ddce0c10e7",
+      "css": "compass",
+      "code": 59407,
+      "src": "typicons"
+    },
+    {
+      "uid": "3fzybskyukolbvmshoyord1b254366gh",
+      "css": "contrast",
+      "code": 59395,
+      "src": "typicons"
+    },
+    {
+      "uid": "76dfadaf502e065ac7b2689948f49cb0",
+      "css": "chart-pie-outline",
+      "code": 59403,
+      "src": "typicons"
+    },
+    {
+      "uid": "8f47f269b2667fb9b661e950a9599e26",
+      "css": "puzzle-outline",
+      "code": 59392,
+      "src": "typicons"
+    },
+    {
+      "uid": "xoidjr6q3rzi7tpw6hci1k6srz15g11l",
+      "css": "puzzle",
+      "code": 59402,
+      "src": "typicons"
+    },
+    {
+      "uid": "33cea6d7bd699348c0d593e105361a51",
+      "css": "facebook-circled",
+      "code": 59400,
+      "src": "typicons"
+    },
+    {
+      "uid": "77b3693facc3d803417105997b4ffe96",
+      "css": "facebook",
+      "code": 59399,
+      "src": "typicons"
+    },
+    {
+      "uid": "b523a5bcf8d08725038873d89bb003fd",
+      "css": "twitter-circled",
+      "code": 59401,
+      "src": "typicons"
+    },
+    {
+      "uid": "4568bba1dba45522fc539c733c9b35e5",
+      "css": "twitter",
+      "code": 59398,
+      "src": "typicons"
+    }
+  ]
+}
