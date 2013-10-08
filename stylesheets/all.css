@@ -1,55 +1,553 @@
-@charset "utf-8";
+@charset "UTF-8";
+/* line 2, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+/* line 10, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
 
-h1 {
-  color: rgba(0, 0, 0, .3);
+/* line 19, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em; }
+
+/* line 25, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+label {
   font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  margin-bottom: 0.375em; }
+  /* line 29, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 33, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+/* line 39, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: #477dca;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 52, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover {
+    border-color: #c4c4c4; }
+  /* line 56, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+/* line 63, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
+/* line 67, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 72, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+select {
+  width: auto;
+  margin-bottom: 1.5em; }
+
+/* line 78, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_forms.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 1, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+body {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em; }
+
+/* line 9, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  line-height: 1.25em; }
+
+/* line 15, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 19, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-family: "PT Serif", serif; }
+
+/* line 25, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 29, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 33, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 37, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 41, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 3.75em;
+  font-family: "PT Sans", sans-serif; }
+
+/* line 46, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+a {
+  color: #477dca;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear; }
+  /* line 51, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #2c5999; }
+  /* line 55, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 61, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 69, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 74, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #dddddd;
+  cursor: help; }
+
+/* line 79, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+address {
+  display: block;
+  margin: 0 0 0.75em; }
+
+/* line 84, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+hgroup {
+  margin-bottom: 0.75em; }
+
+/* line 88, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+del {
+  color: #595959; }
+
+/* line 92, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 99, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 103, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 1, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_tables.scss */
+table {
+  margin: 0.75em 0;
+  width: 100%; }
+
+/* line 6, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 13, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0; }
+
+/* line 18, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 19, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_lists.scss */
+dl {
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* Success, error & notice boxes for messages and errors. */
+/* line 3, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+.error, #flash_failure, .notice, #flash_notice, .success, #flash_success {
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  font-weight: bold; }
+
+/* line 9, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+.error, #flash_failure {
+  background: #fbe3e4;
+  color: #96151b; }
+  /* line 14, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+  .error a, #flash_failure a {
+    color: #6a0f13; }
+    /* line 17, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+    .error a:hover, #flash_failure a:hover {
+      color: #110203; }
+
+/* line 23, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+.notice, #flash_notice {
+  background: #fff6bf;
+  color: #8c7800; }
+  /* line 28, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+  .notice a, #flash_notice a {
+    color: #594c00; }
+    /* line 31, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+    .notice a:hover, #flash_notice a:hover {
+      color: black; }
+
+/* line 38, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+.success, #flash_success {
+  background: #e6efc2;
+  color: #56651a; }
+  /* line 43, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+  .success a, #flash_success a {
+    color: #333c10; }
+    /* line 46, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/base/_flashes.scss */
+    .success a:hover, #flash_success a:hover {
+      color: black; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("fontello.eot?3433872");
+  src: url("fontello.eot?3433872#iefix") format("embedded-opentype"), url("fontello.woff?3433872") format("woff"), url("fontello.ttf?3433872") format("truetype"), url("fontello.svg?3433872#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?3433872#fontello') format('svg');
   }
 }
+*/
+/* line 22, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 53, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-users-outline:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 54, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-twitter:before {
+  content: '\e806'; }
+
+/* '' */
+/* line 55, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-ok-outline:before {
+  content: '\e80c'; }
+
+/* '' */
+/* line 56, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-ok:before {
+  content: '\e80d'; }
+
+/* '' */
+/* line 57, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-thumbs-up:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 58, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-thumbs-down:before {
+  content: '\e805'; }
+
+/* '' */
+/* line 59, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-comment:before {
+  content: '\e811'; }
+
+/* '' */
+/* line 60, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-chat-alt:before {
+  content: '\e810'; }
+
+/* '' */
+/* line 61, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-address:before {
+  content: '\e80e'; }
+
+/* '' */
+/* line 62, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-users:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 63, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-contrast:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 64, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-chart-pie-outline:before {
+  content: '\e80b'; }
+
+/* '' */
+/* line 65, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-puzzle-outline:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 66, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-puzzle:before {
+  content: '\e80a'; }
+
+/* '' */
+/* line 67, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-facebook-circled:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 68, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-facebook:before {
+  content: '\e807'; }
+
+/* '' */
+/* line 69, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-twitter-circled:before {
+  content: '\e809'; }
+
+/* '' */
+/* line 70, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/_icons.scss */
+.icon-compass:before {
+  content: '\e80f'; }
+
+/* '' */
+/* line 11, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+html, body {
+  height: 100%; }
+
+/* line 15, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+.sticky-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -400px; }
+
+/* line 22, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+.footer, .push {
+  height: 400px; }
+
+/* line 28, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+.container {
+  *zoom: 1;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4em 0;
+  margin: auto; }
+  /* line 18, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .container:after {
+    clear: both; }
+
+/* line 34, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+.hero {
+  width: 100%;
+  position: relative;
+  background-color: #f0da6a;
+  color: black;
+  min-height: 400px; }
+  /* line 41, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  .hero img {
+    left: 0;
+    height: auto;
+    width: 100%; }
+  /* line 47, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  .hero h1 img {
+    max-width: 16%; }
+  /* line 51, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  .hero input {
+    display: block;
+    float: left;
+    margin-right: 2.12766%;
+    width: 31.91489%; }
+    /* line 41, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .hero input:last-child {
+      margin-right: 0; }
+  /* line 54, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  .hero button {
+    display: block;
+    float: left;
+    margin-right: 2.12766%;
+    width: 14.89362%; }
+    /* line 41, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .hero button:last-child {
+      margin-right: 0; }
+
+/* line 63, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+.bullets {
+  *zoom: 1;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 18, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .bullets:before, .bullets:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .bullets:after {
+    clear: both; }
+  /* line 66, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  .bullets .bullet-point {
+    display: block;
+    float: left;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    border-top: 3px solid #333333;
+    padding-top: 20px;
+    margin-bottom: 2em; }
+    /* line 41, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .bullets .bullet-point:last-child {
+      margin-right: 0; }
+    /* line 71, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+    .bullets .bullet-point i {
+      font-size: 25px;
+      padding-right: 10px;
+      margin-bottom: 1em;
+      float: left;
+      text-align: center; }
+
+/* line 81, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+.wrap {
+  *zoom: 1;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 18, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .wrap:before, .wrap:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .wrap:after {
+    clear: both; }
+
+/* line 86, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+article {
+  display: block;
+  float: left;
+  margin-right: 2.12766%;
+  width: 48.93617%; }
+  /* line 41, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_span-columns.scss */
+  article:last-child {
+    margin-right: 0; }
+  /* line 70, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_omega.scss */
+  article:nth-child(2n) {
+    margin-right: 0; }
+  /* line 75, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_omega.scss */
+  article:nth-child(2n+1) {
+    clear: left; }
+  /* line 90, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  article img {
+    width: 100%;
+    height: 200px; }
+
+/* line 97, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+.footer {
+  background-color: gray; }
+  /* line 99, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  .footer ul {
+    display: block;
+    float: left;
+    margin-right: 2.12766%;
+    width: 31.91489%; }
+    /* line 41, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .footer ul:last-child {
+      margin-right: 0; }
