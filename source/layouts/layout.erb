@@ -24,10 +24,15 @@
   
   <body class="<%= page_classes %>">
     <div class="sticky-wrapper">
+      <%= partial "header" %>
       <%= yield %>
       <div class="push"></div>
     </div><!--sticky-wrapper-->
     <%= partial "footer" %>
+    
+    
+    
+    
     
     <script>
     var scrollSpeed = 70;
@@ -53,7 +58,7 @@
          setInterval(bgscroll, scrollSpeed);    
         
     </script>
-    
+                        
   </body>
 </html>
   

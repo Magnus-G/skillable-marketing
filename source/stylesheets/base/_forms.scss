@@ -5,7 +5,6 @@ $form-border-radius: $base-accent-color;
 $form-box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
-$form-font-family: $base-font-family;
 
 fieldset {
   background: lighten($base-border-color, 10);
@@ -18,7 +17,7 @@ input,
 label,
 select {
   display: block;
-  font-family: $form-font-family;
+  // font-family: $form-font-family;
   font-size: $form-font-size;
 }
 
@@ -39,12 +38,12 @@ textarea,
 #{$all-text-inputs} {
   @include box-sizing(border-box);
   @include transition(border-color);
-  background-color: master-color(#EEE);
+  background-color: master-color(#F8F8F8);
   border-top-left-radius: $radius;
   border-bottom-left-radius: $radius;
   border: 1px solid $form-border-color;
   box-shadow: $form-box-shadow;
-  font-family: $form-font-family;
+  // font-family: $form-font-family;
   font-size: $form-font-size;
   padding: 16px;
   width: 100%;
@@ -73,28 +72,15 @@ textarea,
   }
 }
 
-// input[type="search"] {
-//   @include appearance(none);
-// }
-
-// input[type="checkbox"], input[type="radio"] {
-//   display: inline;
-//   margin-right: $base-line-height / 4;
-// }
-
-// select {
-//   width: auto;
-//   margin-bottom: $base-line-height;
-// }
-
-// button,
-// input[type="submit"] {
-//   // @extend %button;
-//   @include appearance(none);
-//   cursor: pointer;
-//   user-select: none;
-//   vertical-align: middle;
-//   white-space: nowrap;
-// }
-
-
+.contact-form {
+  input, textarea {
+    margin-bottom: $space/2;
+    border-radius: $radius;
+  }
+  button {
+    @include button-mixin($cta-color);
+    padding: 13px 40px;
+    border-radius: $radius;
+    float: right;
+  }
+}
