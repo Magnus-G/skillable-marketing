@@ -74,21 +74,13 @@ html, body {
 
 ///////////////////////////////////////////////////////////
 
-.hero-wrap {
-  background-color: red;
-}
-
 .hero {
-  background: url(/images/hero.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  @include linear-gradient(transparentize($contrast-color, 1), $contrast-color);
+  background-image: url(../images/hero.png);
+  background-size: 1550px 500px;
   background-color: $contrast-color;
+
   height: 500px;
-  width: 100%;
-  
-  color: black;
   min-height: 400px;
 
   h2 {
@@ -117,6 +109,46 @@ html, body {
     font-size: 20px;
   }
 }
+
+
+// .hero {
+//   background: url(/images/hero.png) no-repeat center center fixed;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//   background-color: $contrast-color;
+//   height: 500px;
+//   width: 100%;
+//   color: black;
+//   min-height: 400px;
+
+//   h2 {
+//     font-family: 'Vollkorn', serif;
+//     text-align: center;
+//     color: master-color(white);
+//     font-style: italic;
+//     margin-top: 70px;
+//     margin-bottom: 20px;
+//     font-weight: 400;
+//     font-size: 55px;
+//   }
+
+//   hr {
+//     width: 140px;
+//     margin: auto;
+//   }
+
+//   h3 {
+//     width: 50%;
+//     margin: auto;
+//     margin-top: 20px;
+//     text-align: center;
+//     color: master-color(white);
+//     font-weight: normal;
+//     font-size: 20px;
+//   }
+// }
 
 ///////////////////////////////////////////////////////////
 
