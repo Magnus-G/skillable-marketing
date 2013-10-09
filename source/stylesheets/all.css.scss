@@ -153,17 +153,30 @@ html, body {
   background-color: $footer-color;
   padding: $space;
   border-bottom: 5px solid $cta-color;
+  font-weight: 500;
+
   ul {
     @include span-columns(4);
     @include media($mobile) {
       @include span-columns(12);
     }
+
+    i {
+      color: $cta-color;
+      margin-right: 10px;
+    }
+
+    .logo svg {
+      width: 110px;
+      height: 20px;
+    }
+
   }
 }
 
 ///////////////////////////////////////////////////////////
 //
-//  Text page
+//  Text pages
 //
 ///////////////////////////////////////////////////////////
 
@@ -178,6 +191,8 @@ html, body {
     @include span-columns(12);
   }
 }
+
+
 
 
 
