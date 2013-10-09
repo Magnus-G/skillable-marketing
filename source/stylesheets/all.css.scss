@@ -77,7 +77,7 @@ html, body {
 .hero {
   @include linear-gradient(transparentize($contrast-color, 1), $contrast-color);
   background-image: url(../images/hero.png);
-  background-size: 1550px 500px;
+  background-size: 1800px 600px;
   background-color: $contrast-color;
 
   height: 500px;
