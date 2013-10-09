@@ -39,7 +39,7 @@ textarea,
 #{$all-text-inputs} {
   @include box-sizing(border-box);
   @include transition(border-color);
-  background-color: master-color(white);
+  background-color: master-color(#EEE);
   border-top-left-radius: $radius;
   border-bottom-left-radius: $radius;
   border: 1px solid $form-border-color;
@@ -47,7 +47,7 @@ textarea,
   font-family: $form-font-family;
   font-size: $form-font-size;
   // margin-bottom: $base-line-height / 2;
-  padding: 12px;
+  padding: 16px;
   width: 100%;
 
   &:hover {
@@ -63,7 +63,6 @@ textarea,
 
 @mixin button-mixin($button-color) {
   background-color: $button-color;
-  padding: 13px 20px;
   color: master-color(white);
   border: none;
   @include transition (all 0.2s ease-in-out);

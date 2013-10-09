@@ -42,9 +42,7 @@ html, body {
   }
 
   h1 img {
-    // margin-top: 20px;
-    // max-width: 10%;
-    margin-top: 13px;
+    margin-top: 18px;
     max-width: 15%;
     float: left;
   }
@@ -54,9 +52,22 @@ html, body {
     margin-top: 15px;
     p {
       display: inline;
+      margin-right: 15px;
     }
     .button {
-      @include button-mixin(gray);
+      padding: 13px 20px;
+      
+      &.left {
+        border-top-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+        @include button-mixin(#3b599b);
+        margin-right: -3px;
+      }
+      &.right {
+        border-top-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+        @include button-mixin(#127eb4);
+      }
     }
   }
 }
@@ -74,34 +85,21 @@ html, body {
     -o-background-size: cover;
     background-size: cover;
   background-color: $contrast-color;
-  height: 550px;
+  height: 500px;
   width: 100%;
   
   color: black;
   min-height: 400px;
 
-  img {
-    // background-color: $hero-background;
-    // left: 0;
-    // height: auto;
-    // width: 100%;
-    // opacity: 0.5;
-  }
-
   h2 {
     font-family: 'Vollkorn', serif;
     text-align: center;
     color: master-color(white);
-    // font-family: georgia;
     font-style: italic;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 55px;
-    // display: inline-block;
-    // background-color: master-color(black);
-    // text-align: center;
-    // padding: 10px 20px;
   }
 
   hr {
@@ -137,6 +135,7 @@ html, body {
   }
   button {
     @include button-mixin($cta-color);
+    padding: 17px 20px;
     width: 30%;
     border-top-right-radius: $radius;
     border-bottom-right-radius: $radius;
@@ -161,7 +160,7 @@ html, body {
   vertical-align: middle;
   width: 35px;
   height: 35px;
-  background-color: $base-font-color;
+  background-color: $cta-color;
   border-radius: 30px;
 }
 .icon-container * {
@@ -199,6 +198,7 @@ html, body {
 .footer .container {
   background-color: $footer-color;
   padding: $space;
+  border-bottom: 5px solid $cta-color;
   ul {
     @include span-columns(4);
   }
