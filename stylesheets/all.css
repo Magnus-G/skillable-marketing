@@ -471,22 +471,17 @@ html, body {
           background-color: #106e9d; }
 
 /* line 77, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
-.hero-wrap {
-  background-color: red; }
-
-/* line 81, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .hero {
-  background: url(../images/hero.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: rgba(84, 116, 131, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(84, 116, 131, 0)), color-stop(100%, #547483));
+  background-image: -webkit-linear-gradient(rgba(84, 116, 131, 0), #547483);
+  background-image: linear-gradient(rgba(84, 116, 131, 0), #547483);
+  background-image: url(../images/hero.png);
+  background-size: 1550px 500px;
   background-color: #547483;
   height: 500px;
-  width: 100%;
-  color: black;
   min-height: 400px; }
-  /* line 94, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  /* line 86, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
   .hero h2 {
     font-family: 'Vollkorn', serif;
     text-align: center;
@@ -496,11 +491,11 @@ html, body {
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 55px; }
-  /* line 105, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  /* line 97, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
   .hero hr {
     width: 140px;
     margin: auto; }
-  /* line 110, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  /* line 102, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
   .hero h3 {
     width: 50%;
     margin: auto;
@@ -510,7 +505,7 @@ html, body {
     font-weight: normal;
     font-size: 20px; }
 
-/* line 124, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+/* line 156, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .signup {
   padding: 0.5em;
   background-color: white;
@@ -519,11 +514,11 @@ html, body {
   margin: auto;
   width: 50%;
   margin-top: -35px; }
-  /* line 132, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  /* line 164, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
   .signup input {
     width: 70%;
     float: left; }
-  /* line 136, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  /* line 168, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
   .signup button {
     background-color: #00b465;
     color: white;
@@ -542,17 +537,17 @@ html, body {
     .signup button:active {
       background-color: #009b57; }
 
-/* line 145, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+/* line 177, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .intro-heading {
   text-align: center;
   font-size: 30px; }
 
-/* line 151, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+/* line 183, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .icon {
   float: left;
   margin-right: 10px; }
 
-/* line 156, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+/* line 188, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .icon-container {
   display: table-cell;
   text-align: center;
@@ -563,11 +558,11 @@ html, body {
   background-color: #00b465;
   border-radius: 30px; }
 
-/* line 166, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+/* line 198, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .icon-container * {
   vertical-align: middle; }
 
-/* line 170, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+/* line 202, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .bullets {
   *zoom: 1;
   max-width: 1200px;
@@ -580,7 +575,7 @@ html, body {
   /* line 23, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
   .bullets:after {
     clear: both; }
-  /* line 173, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  /* line 205, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
   .bullets .bullet-point {
     display: block;
     float: left;
@@ -593,7 +588,7 @@ html, body {
     .bullets .bullet-point:last-child {
       margin-right: 0; }
     @media screen and (min-width: 769px) {
-      /* line 173, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+      /* line 205, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
       .bullets .bullet-point {
         display: block;
         float: left;
@@ -602,18 +597,18 @@ html, body {
         /* line 41, /Users/Magnus/.rvm/gems/ruby-1.9.3-p392/gems/neat-1.3.0/app/assets/stylesheets/grid/_span-columns.scss */
         .bullets .bullet-point:last-child {
           margin-right: 0; } }
-    /* line 183, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+    /* line 215, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
     .bullets .bullet-point i {
       font-size: 18px;
       color: white;
       text-align: center; }
 
-/* line 198, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+/* line 230, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
 .footer .container {
   background-color: whitesmoke;
   padding: 2em;
   border-bottom: 5px solid #00b465; }
-  /* line 202, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
+  /* line 234, /Users/Magnus/Documents/thoughtbot/skillable-marketing/source/stylesheets/all.css.scss */
   .footer .container ul {
     display: block;
     float: left;
