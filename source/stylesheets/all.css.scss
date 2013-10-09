@@ -24,11 +24,11 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -400px;
+  margin: 0 auto -250px;
 }
 
 .footer, .push {
-  height: 400px;
+  height: 250px;
 }
 
 ///////////////////////////////////////////////////////////
@@ -42,7 +42,7 @@ html, body {
     // padding: $space 0;
   }
   @include media($mobile) {
-    margin: 0 $space/2;
+    margin: 0 $space/3;
     padding: $space 0;
   }
 }
@@ -52,6 +52,10 @@ html, body {
 //  Main
 //
 ///////////////////////////////////////////////////////////
+
+.container.main {
+  padding: $space 0;
+}
 
 .signup {
   padding: $space /4;
@@ -86,7 +90,7 @@ html, body {
   }
 }
 
-.intro-heading {
+h2.intro-heading {
   text-align: center;
   font-size: 30px;
 }
@@ -123,6 +127,11 @@ html, body {
     }
     @include media($mobile) {
       @include span-columns(12);
+    }
+
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 24px;
     }
 
     p {

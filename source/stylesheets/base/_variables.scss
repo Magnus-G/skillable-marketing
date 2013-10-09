@@ -8,7 +8,7 @@
 // EFFECTS. Comment out any unused master effects or add new ones.
   // $effect-color: lighten($effect-color, 30); // Lightens the color.
   // $effect-color: saturate($effect-color, 40); // Saturates the color.
-  // $effect-color: adjust-hue($effect-color, $color-darkness); // Shifts the hue. The darker it is, the more the hue will shift.
+  // $effect-color: adjust-hue($effect-color, 10); // Shifts the hue. The darker it is, the more the hue will shift.
   // $effect-color: mix($effect-color, $mix-color, $mix-weight);
   // $bg-color: grayscale($effect-color);
   $bg-color: mix($effect-color, $bg-color, $percentage); 
@@ -56,7 +56,7 @@ $hero-background: master-color(whitesmoke);
 $button-color: master-color(gray);
 $footer-color: master-color(whitesmoke);
 $cta-color: master-color(#00B465);
-$contrast-color: master-color(#547483);
+$contrast-color: master-color(#548094);
 
 
 $blue: master-color(#477DCA);

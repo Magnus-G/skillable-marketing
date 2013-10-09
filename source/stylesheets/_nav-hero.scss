@@ -81,8 +81,6 @@
       }
       }
     }
-
-
 }
 
 ///////////////////////////////////////////////////////////
@@ -93,8 +91,8 @@
 
 .hero {
   @include linear-gradient(transparentize($contrast-color, 1), $contrast-color);
-  background-image: url(../images/hero.png);
-  background-size: 1800px 600px;
+  background-image: url(../images/hero3.png);
+  background-size: 1750px 600px;
   background-color: $contrast-color;
   height: 500px;
   @include media($tablet) {
@@ -138,7 +136,7 @@
     margin-top: 20px;
     text-align: center;
     color: master-color(white);
-    font-weight: normal;
+    font-weight: 500;
     font-size: 22px;
     line-height: 32px;
     @include media($mobile) {
