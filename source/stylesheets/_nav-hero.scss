@@ -1,0 +1,144 @@
+
+///////////////////////////////////////////////////////////
+//
+//  Nav
+//
+///////////////////////////////////////////////////////////
+
+.nav {
+  height: 80px;
+  background-color: $nav-color;
+  @include media($mobile) {
+    height: 60px;
+  }  
+
+  .container {
+    padding: 0;
+  }
+
+  .logo svg {
+    width: 155px;
+    height: 30px;
+    float: left;
+    margin-top: 24px;
+    @include media($mobile) {
+      margin-top: 14px;
+    }
+  }
+
+  .logo-color {
+    fill: $contrast-color;
+  }
+
+  .dropdown-menu {
+    float: right;
+    cursor: pointer;
+    position: relative;
+    color: $contrast-color;
+    border-bottom: 2px solid $contrast-color;
+    padding: 4px 8px;
+    margin-top: 19px;
+    font-weight: 600;
+    @include media($mobile) {
+      margin-top: 9px;
+    }
+
+    &:hover .dropdown {
+      display: block;
+    }
+
+   .dropdown { // dropdown
+      display: none;
+      right: 0px;
+      width: 287px;
+      position: absolute;
+      color: white;
+      background-color: $nav-color;
+      border-radius: $radius *2;
+      padding: 8px;
+      @include transition (all 0.2s ease-in-out);
+
+      .button {
+        padding: 13px 20px;
+        display: inline;
+
+        span {
+          color: transparentize(white, 0.5);
+        }
+        
+        &.left {
+          border-top-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+          @include button-mixin(#3b599b);
+          float: left;
+          margin-right: -3px;
+        }
+        &.right {
+          border-top-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+          @include button-mixin(#127eb4);
+        }
+      }
+      }
+    }
+
+
+}
+
+///////////////////////////////////////////////////////////
+//
+//  Hero
+//
+///////////////////////////////////////////////////////////
+
+.hero {
+  @include linear-gradient(transparentize($contrast-color, 1), $contrast-color);
+  background-image: url(../images/hero.png);
+  background-size: 1800px 600px;
+  background-color: $contrast-color;
+  height: 500px;
+  @include media($tablet) {
+    height: 380px;
+  }
+  @include media($mobile) {
+    height: 380px;
+  }
+
+
+  h2 {
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    color: master-color(white);
+    font-style: italic;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 55px;
+    @include media($tablet) {
+      margin-top: 20px;
+      font-size: 35px;
+    }
+    @include media($mobile) {
+      margin-top: 20px;
+      font-size: 35px;
+    }
+  }
+
+  hr {
+    width: 140px;
+    margin: auto;
+  }
+
+  h3 {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    color: master-color(white);
+    font-weight: normal;
+    font-size: 20px;
+    @include media($mobile) {
+      width: 100%;
+    }
+  }
+}

@@ -4,12 +4,18 @@ title: Skillable
 
 <div class="nav">
   <div class="container">
-    <h1><img src="images/logo1.png" alt=""></h1>
-    <div class="login">
-      <p>Login with</p>
-      <button class="button left">Facebook</button>
-      <button class="button right">LinkedIn</button>
-    </div>
+    <h1>
+      <!-- <img src="images/logo-svg.svg" alt=""> -->
+      <%= partial "logo" %>
+      </h1>
+      
+      <a class="dropdown-menu">
+        Login
+        <div class="dropdown">
+          <button class="button left"><span>with </span>Facebook</button>
+          <button class="button right"><span>with </span>LinkedIn</button>
+        </div>
+      </a>
   </div>
 </div>
 
@@ -17,7 +23,7 @@ title: Skillable
 
   <div class="hero">
     <div class="container">
-      <h2>Grade the people you've worked with &mdash; <br>yourself included</h2>
+      <h2>Find out which skills others see in you</h2>
       <hr>
       <h3>Discover your skills and areas of improvements through anonymous feedback provided by your trusted network.</h3>
     </div>

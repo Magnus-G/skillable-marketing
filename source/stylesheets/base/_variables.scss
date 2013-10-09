@@ -59,7 +59,7 @@ $radius: 3px;
 $blue: master-color(#477DCA);
 $dark-gray: master-color(#333);
 $medium-gray: master-color(#999);
-$light-gray: master-color(#DDD);
+$light-gray: master-color(#CCC);
 $light-red: master-color(#FBE3E4);
 $light-yellow: master-color(#FFF6BF);
 $light-green: master-color(#E6EFC2);
@@ -93,3 +93,15 @@ $footer-color: master-color(whitesmoke);
 
 $cta-color: master-color(#00B465);
 $contrast-color: master-color(#547483);
+
+
+// Media
+///////////////////////////////////////////////////////////////////////////////
+
+$mobile-width: 500px;
+$tablet-width: 800px;
+$desktop-narrow-width: 1240px;
+
+$mobile: new-breakpoint(max-width $mobile-width);
+$tablet: new-breakpoint(max-width $tablet-width);
+$desktop-narrow: new-breakpoint(max-width $desktop-narrow-width);

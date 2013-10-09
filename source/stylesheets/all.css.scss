@@ -5,6 +5,7 @@
 @import "neat";
 @import "base/base";
 @import "icons";
+@import "nav-hero";
 
 ///////////////////////////////////////////////////////////
 
@@ -29,129 +30,21 @@ html, body {
   @include outer-container;
   padding: $space*2 0;
   margin: auto;
-}
-
-///////////////////////////////////////////////////////////
-
-.nav {
-  height: 80px;
-  background-color: $nav-color;
-
-  .container {
-    padding: 0;
+  @include media($desktop-narrow) {
+    margin: 0 $space;
+    // padding: $space 0;
   }
-
-  h1 img {
-    margin-top: 18px;
-    max-width: 15%;
-    float: left;
-  }
-
-  .login {
-    float: right;
-    margin-top: 15px;
-    p {
-      display: inline;
-      margin-right: 15px;
-    }
-    .button {
-      padding: 13px 20px;
-      
-      &.left {
-        border-top-left-radius: $radius;
-        border-bottom-left-radius: $radius;
-        @include button-mixin(#3b599b);
-        margin-right: -3px;
-      }
-      &.right {
-        border-top-right-radius: $radius;
-        border-bottom-right-radius: $radius;
-        @include button-mixin(#127eb4);
-      }
-    }
+  @include media($mobile) {
+    margin: 0 $space/2;
+    padding: $space 0;
   }
 }
 
 ///////////////////////////////////////////////////////////
-
-.hero {
-  @include linear-gradient(transparentize($contrast-color, 1), $contrast-color);
-  background-image: url(../images/hero.png);
-  background-size: 1800px 600px;
-  background-color: $contrast-color;
-
-  height: 500px;
-  min-height: 400px;
-
-  h2 {
-    font-family: 'Vollkorn', serif;
-    text-align: center;
-    color: master-color(white);
-    font-style: italic;
-    margin-top: 70px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 55px;
-  }
-
-  hr {
-    width: 140px;
-    margin: auto;
-  }
-
-  h3 {
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    color: master-color(white);
-    font-weight: normal;
-    font-size: 20px;
-  }
-}
-
-
-// .hero {
-//   background: url(/images/hero.png) no-repeat center center fixed;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-//   background-color: $contrast-color;
-//   height: 500px;
-//   width: 100%;
-//   color: black;
-//   min-height: 400px;
-
-//   h2 {
-//     font-family: 'Vollkorn', serif;
-//     text-align: center;
-//     color: master-color(white);
-//     font-style: italic;
-//     margin-top: 70px;
-//     margin-bottom: 20px;
-//     font-weight: 400;
-//     font-size: 55px;
-//   }
-
-//   hr {
-//     width: 140px;
-//     margin: auto;
-//   }
-
-//   h3 {
-//     width: 50%;
-//     margin: auto;
-//     margin-top: 20px;
-//     text-align: center;
-//     color: master-color(white);
-//     font-weight: normal;
-//     font-size: 20px;
-//   }
-// }
-
+//
+//  Main
+//
 ///////////////////////////////////////////////////////////
-
 
 .signup {
   padding: $space /4;
@@ -161,6 +54,14 @@ html, body {
   margin: auto;
   width: 50%;
   margin-top: -35px;
+  @include media($tablet) {
+    width: 70%;
+  }
+  @include media($mobile) {
+    width: 100%;
+    border-radius: 0;
+  }
+
   input {
     width: 70%;
     float: left;
@@ -171,6 +72,10 @@ html, body {
     width: 30%;
     border-top-right-radius: $radius;
     border-bottom-right-radius: $radius;
+    @include media($mobile) {
+      padding: 17px 10px;
+
+    }
   }
 }
 
@@ -178,7 +83,6 @@ html, body {
   text-align: center;
   font-size: 30px;
 }
-
 
 .icon {
   float: left;
@@ -200,30 +104,41 @@ html, body {
 }
 
 .bullets {
-  @include outer-container;
+  // @include outer-container;
 
   .bullet-point {
-    @include span-columns(6);
-    @include omega;
+    @include span-columns(3);
     padding-top: 20px;
     margin-bottom: $space;
-    @include media(769px) {
-      @include span-columns(3);
+    @include media($tablet) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @include media($mobile) {
+      @include span-columns(12);
     }
 
+    p {
+      @include media($tablet) {
+        margin-bottom: ($base-line-height /2);
+      }
+      @include media($mobile) {
+        margin-bottom: ($base-line-height /2);
+      }
+    }
 
     i {
       font-size: 18px;
-      // padding-right: 2px;
-      // margin-bottom: $space/2;
-      // float: left;
       color: white;
       text-align: center;
     }
   }
 }
 
-
+///////////////////////////////////////////////////////////
+//
+//  Footer
+//
 ///////////////////////////////////////////////////////////
 
 
@@ -233,5 +148,8 @@ html, body {
   border-bottom: 5px solid $cta-color;
   ul {
     @include span-columns(4);
+    @include media($mobile) {
+      @include span-columns(12);
+    }
   }
 }
