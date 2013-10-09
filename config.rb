@@ -46,7 +46,7 @@
 # end
 
 # activate :relative_assets
-# set :relative_links, true
+set :relative_links, true
 
 set :css_dir, 'stylesheets'
 
