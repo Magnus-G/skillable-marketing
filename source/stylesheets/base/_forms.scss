@@ -38,12 +38,12 @@ textarea,
 #{$all-text-inputs} {
   @include box-sizing(border-box);
   @include transition(border-color);
-  background-color: master-color(#F8F8F8);
+  @extend %white-shadow;
+  background-color: lighten($body-color, 2);
   border-top-left-radius: $radius;
   border-bottom-left-radius: $radius;
   border: 1px solid $form-border-color;
-  box-shadow: $form-box-shadow;
-  // font-family: $form-font-family;
+  border-right: none; 
   font-size: $form-font-size;
   padding: 16px;
   width: 100%;

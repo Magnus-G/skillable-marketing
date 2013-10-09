@@ -50,13 +50,13 @@ $radius: 3px;
 ///////////////////////////////////////////////////////////////////////////////
 
 // Main colors
-$body-color: master-color(white);
-$nav-color: master-color(white);
+$body-color: master-color(#F1F1EA);
+$nav-color: $body-color;
 $hero-background: master-color(whitesmoke);
 $button-color: master-color(gray);
 $footer-color: master-color(whitesmoke);
-$cta-color: master-color(#00B465);
-$contrast-color: master-color(#548094);
+$cta-color: master-color(#0C9EC2);//(#00B465);
+$contrast-color: master-color(#537280);
 
 
 $blue: master-color(#477DCA);
@@ -104,4 +104,8 @@ $desktop-narrow: new-breakpoint(max-width $desktop-narrow-width);
 
 %hero-text {
   text-shadow: 0 1px 3px transparentize(darken($contrast-color, 40), 0.75);
+}
+
+%white-shadow {
+  box-shadow: 0 1px 1px white;
 }
