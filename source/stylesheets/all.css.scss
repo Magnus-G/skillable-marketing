@@ -6,6 +6,7 @@
 @import "base/base";
 @import "icons";
 @import "nav-hero";
+@import "modal";
 
 ///////////////////////////////////////////////////////////
 
@@ -79,8 +80,8 @@ html, body {
     float: left;
   }
   button {
-    @include button-mixin($cta-color);
-    border-bottom: 2px solid darken($cta-color, 3);
+    @include button-mixin($main-cta-color);
+    border-bottom: 2px solid darken($main-cta-color, 3);
     @extend %white-shadow;
     padding: 16px 20px;
     width: 30%;
@@ -88,7 +89,7 @@ html, body {
     border-top-right-radius: $radius;
     border-bottom-right-radius: $radius;
     @include media($mobile) {
-      padding: 17px 10px;
+      padding: 16px 10px;
 
     }
   }

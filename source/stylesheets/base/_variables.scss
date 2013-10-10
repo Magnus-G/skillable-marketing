@@ -34,7 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 $body-font: 'PT Sans', sans-serif;
 $contrast-font: 'Roboto Slab', serif;
-$hero-font: 'Vollkorn', serif;
+$hero-font: 'PT Serif', serif;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
@@ -55,6 +55,8 @@ $nav-color: $body-color;
 $hero-background: master-color(whitesmoke);
 $button-color: master-color(gray);
 $footer-color: master-color(whitesmoke);
+
+$main-cta-color: #37c4a3;
 $cta-color: master-color(#0C9EC2);//(#00B465);
 $contrast-color: master-color(#537280);
 

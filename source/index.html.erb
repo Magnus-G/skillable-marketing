@@ -14,10 +14,30 @@ title: Skillable
 
 <div class="signup">
     <input type="text" placeholder="Enter email to sign up">
-  <button href="#" type="submit" class="button">
+  <button data-toggle="modal" href="#myModal" href="#" type="submit" class="button">
     Sign up
   </button>
 </div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h3 class="modal-title">Thank you!</h3>
+       </div>
+       <div class="modal-body">
+         <p><b>Thank you for registering</b> your interest in Skillable!
+         We will send you an email shortly confirming your access to our private beta. </p><p>
+         If you have trouble logging in, or want to provide your feedback, please <a href="contact.html">contact us.</a></p>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="modal-button" data-dismiss="modal">Close</button>
+       </div>
+     </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+ </div><!-- /.modal -->
+
 
 <!-- ////////////////// -->
 
