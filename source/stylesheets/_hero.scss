@@ -1,0 +1,68 @@
+.hero {
+  @include linear-gradient(transparentize($contrast-color, 1), $contrast-color);
+  background-image: url(../images/hero3.png);
+  background-size: 1750px 600px;
+  background-color: $contrast-color;
+  height: 500px;
+
+  @include media($tablet) {
+    height: 380px;
+  }
+
+  @include media($mobile) {
+    height: 380px;
+  }
+
+  h2 {
+    @extend %hero-text;
+    font-family: $body-font;
+    text-align: center;
+    color: $body-color;
+    margin-top: 70px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 45px;
+
+    @include media($tablet) {
+      margin-top: 20px;
+      font-size: 35px;
+    }
+
+    @include media($mobile) {
+      margin-top: 20px;
+      font-size: 35px;
+    }
+  }
+
+  hr {
+    width: 240px;
+    height: 3px;
+    margin: auto;
+  }
+
+  h3 {
+    @extend %hero-text;
+    width: 50%;
+    margin: auto;
+    font-family: $hero-font;
+    font-style: italic;
+    margin-top: 25px;
+    text-align: center;
+    color: $body-color;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 32px;
+
+    @include media($tablet) {
+      font-size: 18px;
+      line-height: 29px;
+      width: 100%;
+    }
+    
+    @include media($mobile) {
+      font-size: 18px;
+      line-height: 25px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+body {
+  min-width: 300px;
+}
+
+html, body {
+  height: 100%;
+  background-color: $body-color;
+}
+
+::selection {
+  background: lighten(desaturate($cta-color, 30), 40); /* Safari */
+}
+
+::-moz-selection {
+  background: lighten(desaturate($cta-color, 30), 40); /* Firefox */
+}
+
+.sticky-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -250px;
+}
+
+.footer, .push {
+  height: 250px;
+}
+
+.container {
+  @include outer-container;
+  padding: $space*2 0;
+  margin: auto;
+
+  @include media($desktop-narrow) {
+    margin: 0 $space;
+  }
+  
+  @include media($mobile) {
+    margin: 0 $space/3;
+    padding: $space 0;
+  }
+}

@@ -1,6 +1,4 @@
-/* Success, error & notice boxes for messages and errors. */
 %flash {
-  // margin-bottom: $base-line-height / 2;
   padding: $base-line-height / 2;
   font-weight: bold;
   text-align: center;
@@ -9,7 +7,6 @@
 .error, #flash_failure {
   @extend %flash;
   display: none;
-  // opacity: 0;
   background: $error-color;
   color: lighten($error-color, 60);
 
@@ -21,33 +18,3 @@
     }
   }
 }
-
-.notice, #flash_notice {
-  @extend %flash;
-  background: $notice-color;
-  color: darken($notice-color, 60);
-
-  a {
-    color: darken($notice-color, 70);
-
-    &:hover {
-      color: darken($notice-color, 90);
-    }
-  }
-}
-
-
-.success, #flash_success {
-  @extend %flash;
-  background: $success-color;
-  color: darken($success-color, 60);
-
-  a {
-    color: darken($success-color, 70);
-
-    &:hover {
-      color: darken($success-color, 90);
-    }
-  }
-}
-

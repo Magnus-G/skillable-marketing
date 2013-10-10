@@ -1,4 +1,11 @@
-%button {
-  @include button(simple, $base-accent-color);
-  font-size: $form-font-size;
+%hero-text {
+  text-shadow: 0 1px 3px transparentize(darken($contrast-color, 40), 0.75);
+}
+
+%white-shadow {
+  box-shadow: 0 1px 1px white;
+}
+
+.visible {
+  display: block !important;
 }

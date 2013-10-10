@@ -1,0 +1,80 @@
+.container.main {
+  padding: $space 0;
+}
+
+h2.intro-heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+.icon {
+  float: left;
+  margin-right: 10px;
+}
+
+.icon-container {
+  display: table-cell;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  background-color: $cta-color;
+  border-radius: 30px;
+}
+
+.icon-container * {
+  vertical-align: middle;
+}
+
+.bullets {
+  .bullet-point {
+    @include span-columns(3);
+    padding-top: 20px;
+    margin-bottom: $space;
+
+    @include media($tablet) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      @include media($tablet) {
+        margin-bottom: ($base-line-height /2);
+      }
+
+      @include media($mobile) {
+        margin-bottom: ($base-line-height /2);
+      }
+    }
+
+    i {
+      font-size: 18px;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+.column {
+  @include span-columns(4);
+  @include omega(3n);
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+}

@@ -1,0 +1,79 @@
+.nav {
+  height: 80px;
+  z-index: 9999;
+  background-color: $nav-color;
+
+  @include media($mobile) {
+    height: 60px;
+  }  
+
+  .container {
+    padding: 0;
+  }
+
+  .logo svg {
+    fill: $cta-color;
+    width: 165px;
+    height: 40px;
+    float: left;
+    margin-top: 17px;
+
+    @include media($mobile) {
+      margin-top: 10px;
+    }
+  }
+
+  .dropdown-menu {
+    float: right;
+    cursor: pointer;
+    position: relative;
+    color: $contrast-color;
+    border-bottom: 2px solid $contrast-color;
+    padding: 4px 8px;
+    margin-top: 19px;
+    font-weight: 600;
+
+    @include media($mobile) {
+      margin-top: 9px;
+    }
+
+    &:hover .dropdown {
+      display: block;
+    }
+
+   .dropdown { 
+    display: none;
+    right: 0px;
+    width: 287px;
+    position: absolute;
+    color: white;
+    background-color: $nav-color;
+    border-radius: $radius *2;
+    padding: 8px;
+    @include transition (all 0.2s ease-in-out);
+
+    .button {
+      padding: 13px 20px;
+      display: inline;
+
+        span {
+          color: transparentize(white, 0.5);
+        }
+      
+        &.left {
+          @include button-mixin(#3b599b);
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          float: left;
+          margin-right: -3px;
+        }
+
+        &.right {
+          @include button-mixin(#127eb4);
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}

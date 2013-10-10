@@ -1,23 +1,14 @@
 $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10);
-$form-border-color-focus: $base-accent-color;
-$form-border-radius: $base-accent-color;
+$form-border-color-focus: $main-cta-color;
 $form-box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
-
-fieldset {
-  background: lighten($base-border-color, 10);
-  border: 1px solid $base-border-color;
-  margin: 0 0 ($base-line-height / 2) 0;
-  padding: $base-line-height;
-}
 
 input,
 label,
 select {
   display: block;
-  // font-family: $form-font-family;
   font-size: $form-font-size;
 }
 
@@ -48,11 +39,11 @@ textarea,
   width: 100%;
 
   &:hover {
-    border-color: master-color($form-border-color-hover);
+    border-color: $form-border-color-hover;
   }
 
   &:focus {
-    border-color: master-color($form-border-color-focus);
+    border-color: $form-border-color-focus;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }
@@ -60,7 +51,8 @@ textarea,
 
 @mixin button-mixin($button-color) {
   background-color: $button-color;
-  color: master-color(white);
+  border-radius: $radius; 
+  color: white;
   border: none;
   @include transition (all 0.2s ease-in-out);
   &:hover {
@@ -76,6 +68,7 @@ textarea,
     margin-bottom: $space/2;
     border-radius: $radius;
   }
+  
   button {
     @include button-mixin($cta-color);
     padding: 13px 40px;
