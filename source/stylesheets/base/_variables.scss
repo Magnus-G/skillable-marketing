@@ -34,7 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 $body-font: 'PT Sans', sans-serif;
 $contrast-font: 'Roboto Slab', serif;
-$hero-font: 'PT Serif', serif;
+$hero-font: 'Merriweather', serif;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
@@ -115,5 +115,5 @@ $desktop-narrow: new-breakpoint(max-width $desktop-narrow-width);
 .visible {
   display: block !important;
   @include transition(color 0.1s linear);
-  
+
 }

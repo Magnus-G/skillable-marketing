@@ -129,15 +129,14 @@
   h3 {
     @extend %hero-text;
     width: 50%;
-    letter-spacing: 1px;
     margin: auto;
     font-family: $hero-font;
     font-style: italic;
-    margin-top: 20px;
+    margin-top: 25px;
     text-align: center;
     color: master-color($body-color);
-    font-weight: 500;
-    font-size: 21px;
+    font-weight: 700;
+    font-size: 19px;
     line-height: 32px;
     @include media($tablet) {
       font-size: 18px;

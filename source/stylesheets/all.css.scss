@@ -10,9 +10,14 @@
 
 ///////////////////////////////////////////////////////////
 
+
+body {
+  min-width: 500px;
+}
+
 html, body {
- height: 100%;
- background-color: $body-color;
+  height: 100%;
+  background-color: $body-color;
 }
 
 ::selection {
