@@ -1,14 +1,17 @@
 /* Success, error & notice boxes for messages and errors. */
 %flash {
-  margin-bottom: $base-line-height / 2;
+  // margin-bottom: $base-line-height / 2;
   padding: $base-line-height / 2;
   font-weight: bold;
+  text-align: center;
 }
 
 .error, #flash_failure {
   @extend %flash;
+  display: none;
+  // opacity: 0;
   background: $error-color;
-  color: darken($error-color, 60);
+  color: lighten($error-color, 60);
 
   a {
     color: darken($error-color, 70);

@@ -81,7 +81,7 @@ $hover-link-color: darken($cta-color, 15);
 $base-border-color: $light-gray;
 
 // Flash Colors
-$error-color: $light-red;
+$error-color: #D8696E;
 $notice-color: $light-yellow;
 $success-color: $light-green;
 
@@ -110,4 +110,10 @@ $desktop-narrow: new-breakpoint(max-width $desktop-narrow-width);
 
 %white-shadow {
   box-shadow: 0 1px 1px white;
+}
+
+.visible {
+  display: block !important;
+  @include transition(color 0.1s linear);
+  
 }

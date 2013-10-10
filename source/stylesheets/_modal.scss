@@ -77,7 +77,7 @@ body.modal-open,
 }
 .modal-content {
   position: relative;
-  background-color: #ffffff;
+  background-color: $body-color;
   // border: 1px solid #999999;
   // border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
