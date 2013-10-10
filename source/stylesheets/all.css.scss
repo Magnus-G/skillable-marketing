@@ -181,6 +181,9 @@ h2.intro-heading {
 
   ul {
     @include span-columns(3);
+    @include media($tablet) {
+      @include span-columns(4);
+    }
     @include media($mobile) {
       @include span-columns(12);
     }
