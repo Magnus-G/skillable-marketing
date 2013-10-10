@@ -68,8 +68,6 @@ html, body {
   padding: $space /4;
   background-color: $body-color;
   border-radius: $radius *2;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
   z-index: 99;
   margin: auto;
   width: 50%;
@@ -85,6 +83,8 @@ html, body {
   input {
     width: 70%;
     float: left;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
   }
   button {
     @include button-mixin($main-cta-color);
